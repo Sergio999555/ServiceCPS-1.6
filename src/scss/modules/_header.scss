@@ -1,0 +1,158 @@
+.header {
+    border-bottom: solid $turquoise 1px;
+    background-color: $white;
+
+    &__mobile {
+        display: flex;
+        justify-content: space-between;
+        padding: 24px 16px;
+    }
+
+    &__burger-logo {
+        display: flex;
+        gap: 16px;
+        align-items: center;
+    }
+
+    &__logo {
+        display: flex;
+        gap: 16px;
+        align-items: center;
+    }
+    
+    &__button-feedback {
+        display: flex;
+        gap: 16px;
+        align-items: center;
+        margin-right: 8px;
+    }
+
+    &__button-feedback::before {
+        content: '';
+        width: 2px;
+        height: 32px;
+        background: #EAEAEA;
+        border-radius: 1px;
+    }
+
+    @media (max-width: 785px) {
+        &__tablet {
+            display: none;
+        }
+    }
+
+    &__container {
+        display: none;
+    }
+
+    &__title {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        font-family: TTLakes-Bold;
+        font-size: 28px;
+        line-height: 40px;
+        letter-spacing: -0.6px;
+        color: $graphiteblack;
+        gap: 12px;
+    }
+
+    &__title::before {
+        content: ' ';
+        width: 4px;
+        height: 40px;
+        background: $lightturquoise;
+        border-radius: 0 20px 20px 0; 
+    }
+
+    &__button {
+        display: inline-flex;
+        gap: 8px;
+        background: $smokywhite;
+        border: none;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    &__button-repair::after {
+        display: inline-block;
+        content: " ";
+        background-image: url('/src/img/icons/repair.svg');
+        width: 40px;
+        height: 40px;
+    }
+
+    &__subtitle {
+        font-family: TTLakes-Medium;
+        font-size: 16px;
+    }
+
+    &__button-check-status::after {
+        display: inline-block;
+        content: " ";
+        background-image: url('/src/img/icons/checkstatus.svg');
+        width: 40px;
+        height: 40px;
+    }
+
+    &__closeBurger-logo {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+    }
+}
+
+@media (min-width: 1366px) {
+    body {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .header {
+        border:none;
+    }
+
+    .main__title {
+        display: none;
+    }
+
+    .header__mobile {
+        display: none;
+    }
+
+    .header__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 8px;
+        padding-top: 16px;
+        padding-right: 16px;
+        background-color: $smokywhite;
+        font-size: 16px;
+    }
+
+    .menu__navigation {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .image img {
+        width: 532px;
+        height: 384px;
+    }
+
+    .content__text {
+        margin-left: 32px;
+    }
+
+    .content__text-tablet {
+        overflow: hidden;
+        max-height: 90px;
+        height: 40px;
+    }
+
+    .header__button-repair:hover,
+    .header__button-check-status:hover {
+        animation: phone-outer 1.5s infinite;
+    }
+}

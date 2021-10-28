@@ -1,0 +1,232 @@
+* {
+    padding-inline-start: 0;
+}
+
+body {
+    background-color: $smokywhite;
+    margin: 0;
+}
+
+.overflow {
+    overflow: hidden;
+}
+
+@media (min-width: 785px) {
+    .header {
+        &__tablet {
+            display: flex;
+            margin: 0 20px;
+            gap: 16px;
+        }
+
+        &__logo::before {
+            content: ' ';
+            width: 2px;
+            height: 32px;
+            background: #eaeaea;
+            border-radius: 1px;
+        }
+
+        &__tablet::after {
+            content: ' ';
+            width: 2px;
+            height: 32px;
+            background: #eaeaea;
+            border-radius: 1px;
+            border-top: 28px;
+            margin-top: 4px;
+            margin-left: 20px;
+        }
+    }
+
+    .main {
+        &__description { 
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+    .content {
+        display: flex;
+        &__text {
+            margin-left: 32px;
+        }
+        &__text-button {
+            margin-left: 32px;   
+        }
+    }
+    .image img {
+        margin: 24px 40px 24px 40px;
+        width: 360px;
+        height: 260px;
+        border-radius: 10px;
+    }
+}
+
+.main {
+    @media (min-width: 1366px) {
+        margin-left: 321px;
+    }
+
+    &__title {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        font-family: TTLakes-Bold;
+        font-size: 28px;
+        line-height: 40px;
+        letter-spacing: -0.6px;
+        color: $graphiteblack;
+        gap: 12px; 
+    }
+
+    &__title::before {
+        content: ' ';
+        width: 4px;
+        height: 40px;
+        background: #41F6D7;
+        border-radius: 0 20px 20px 0; 
+    }
+}
+
+.menu {
+    &__navigation {
+        display: flex;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        padding: 0;
+        margin-left: 16px;
+    }
+
+    &__navigation-item {
+        list-style-type: none;
+        border: solid 2px $smokywhite;
+        background-color: $smokywhite;
+        font-family: TTLakes-Medium;
+        color: $grey;
+        font-size: 16px;
+        scroll-snap-align: start;
+        white-space: nowrap;
+        padding: 8px 16px;
+    }
+
+    &__navigation-item:hover {
+        background-color: $white;
+        border-color: $lightturquoise;
+        border-radius: 6px;
+        transition: .2s;
+    }
+
+    &__navigation-link,
+    &__navigation-link:hover,
+    &__navigation-link:active,
+    &__navigation-link:visited {
+        text-decoration: none;
+        color: $grey;
+        -webkit-tap-highlight-color: transparent;
+    }
+}
+
+.content {
+    &__text-container {
+        margin: 0 auto;
+        font-family: TTLakes-Regular;
+        color: $graphiteblack;
+        font-size: 14px;
+    }
+
+    &__text {
+        margin-left: 32px;
+        height: 90px;
+        overflow: hidden;
+    }
+
+    &__text-button {
+        font-family: TTLakes-Medium;
+        font-size: 16px;
+        margin-left: 32px;
+        margin-top: 24px;
+        color: $graphiteblack;
+        border: none;
+        background-color: $smokywhite;
+        padding: 0;
+        cursor: pointer;
+    }
+
+    &__text-button::before {
+        display: inline-flex;
+        justify-content: flex-start;
+        align-items: center;
+        content: '';
+        background-image: url(/src/img/icons/arrowdown.svg);
+        width: 24px;
+        height: 24px;
+        background-repeat: no-repeat;
+    }
+}
+
+.image {
+    display: flex;
+    justify-content: center;
+}
+
+.image img{
+    margin-top: 24px;
+    width: 320px;
+}
+
+@media (min-width: 1366px) {
+    body {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .main__title {
+        display: none;
+    }
+
+    .header {
+        border:none;
+
+        &__mobile {
+            display: none;
+        }
+
+        &__container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 8px;
+            padding-top: 16px;
+            padding-right: 16px;
+            background-color: $smokywhite;
+            font-size: 16px;
+        }
+    }
+
+    .menu__navigation {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .image img {
+        width: 532px;
+        height: 384px;
+    }
+
+    .content {
+        &__text {
+            margin-left: 32px;
+        }
+
+        &__text-tablet {
+            overflow: hidden;
+            max-height: 90px;
+            height: 40px;
+        }
+    }
+
+    .header__button-repair:hover,
+    .header__button-check-status:hover {
+        animation: phone-outer 1.5s infinite;
+    }
+}
