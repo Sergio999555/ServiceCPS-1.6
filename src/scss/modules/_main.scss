@@ -97,6 +97,10 @@ body {
         margin-left: 16px;
     }
 
+    &__navigation::-webkit-scrollbar {
+        height: 0;
+    }
+
     &__navigation-item {
         list-style-type: none;
         border: solid 2px $smokywhite;

@@ -24,10 +24,12 @@
         flex-direction: column;
         width: 320px;
         height: 100vh;
-        box-shadow: -2px 0px 4px rgba(69, 79, 126, 0.02), 16px 0px 52px rgba(14, 24, 80, 0.2);
         background-color: $white;
         transform: translate(-100%, 0);
         transition: 0.3s;
+        @media (max-width: 1366px) {
+            box-shadow: -2px 0px 4px rgba(69, 79, 126, 0.02), 16px 0px 52px rgba(14, 24, 80, 0.2);
+        }
     }
 
     &__header {
@@ -106,8 +108,13 @@
     }
 
     &__languanes-button {
-        all: unset;
+        background-color: transparent;
+        border: none;
         cursor: pointer;
+        font-family: TT Lakes;
+        font-size: 16px;
+        font-weight: 900;
+        padding: 5px;
     }
 
     &__languanes-button:hover {

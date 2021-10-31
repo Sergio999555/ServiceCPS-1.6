@@ -65,6 +65,14 @@
     &__description {
         display: inline-block;
         margin-bottom: 16px;
+        font-size: 14px;
+    }
+
+    &__description-link,
+    &__description-link:active,
+    &__description-link:visited {
+        color: $pink;
+        text-decoration: none;
     }
   
     &__content {

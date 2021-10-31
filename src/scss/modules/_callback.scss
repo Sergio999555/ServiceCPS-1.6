@@ -60,6 +60,16 @@
     &__description {
         display: inline-block;
         margin-bottom: 16px;
+        font-size: 14px;
+        text-decoration: none;
+    }
+
+    &__description-link,
+    &__description-link:active,
+    &__description-link:visited,
+    &__description-link:link {
+        color: $pink;
+        text-decoration: none;
     }
 
     &__content {
