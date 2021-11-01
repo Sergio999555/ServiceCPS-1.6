@@ -158,7 +158,7 @@ body {
   justify-content: flex-start;
   align-items: center;
   content: '';
-  background-image: url(./img/img/icons/arrowdown.svg);
+  background-image: url(./img/icons/arrowdown.svg);
   width: 24px;
   height: 24px;
   background-repeat: no-repeat; }
@@ -252,7 +252,7 @@ body {
     cursor: pointer;
     transition: .2s;
     content: "";
-    background-image: url("./img/img/highlight.svg");
+    background-image: url("./img/highlight.svg");
     background-repeat: no-repeat;
     background-position: 0 50%;
     position: relative;
@@ -289,8 +289,8 @@ body {
     cursor: pointer;
     font-family: 'TTLakes-Medium';
     font-size: 16px;
-    font-weight: 600;
-    padding: 0; }
+    font-weight: 900;
+    padding: 5px; }
   .sidebar__languanes-button:hover {
     color: #7E7E82; }
   @media (min-width: 1366px) {
@@ -339,7 +339,7 @@ body {
   box-sizing: border-box; }
 
 .repair-brands__button-arrow {
-  background-image: url(./img/img/icons/go.svg);
+  background-image: url(./img/icons/go.svg);
   background-color: transparent;
   width: 40px;
   height: 40px;
@@ -367,7 +367,7 @@ body {
   width: 24px;
   height: 24px;
   content: "";
-  background-image: url(./img/img/icons/arrowdown.svg);
+  background-image: url(./img/icons/arrowdown.svg);
   background-repeat: no-repeat; }
 
 body {
@@ -414,7 +414,7 @@ body {
   display: flex;
   justify-content: flex-end;
   align-self: flex-end;
-  background-image: url(./img/img/icons/go.svg);
+  background-image: url(./img/icons/go.svg);
   background-color: transparent;
   width: 40px;
   height: 40px;
@@ -443,7 +443,7 @@ body {
   width: 24px;
   height: 24px;
   content: "";
-  background-image: url(./img/img/icons/arrowdown.svg);
+  background-image: url(./img/icons/arrowdown.svg);
   background-repeat: no-repeat; }
 
 .price__header {
@@ -477,7 +477,7 @@ body {
 
 .price__offer::after {
   content: " ";
-  background-image: url(./img/img/icons/arrowright.svg);
+  background-image: url(./img/icons/arrowright.svg);
   width: 6px;
   height: 10px;
   top: 25%;
@@ -600,7 +600,7 @@ body {
 
 .table__button::after {
   content: " ";
-  background-image: url(./img/img/icons/arrowwhite.svg);
+  background-image: url(./img/icons/arrowwhite.svg);
   width: 10px;
   height: 10px;
   top: 35%;
@@ -616,8 +616,9 @@ body {
   color: #7E7E82;
   font-size: 14px; }
   .footer__copyright {
-    display: block;
-    text-align: left;
+    display: flex;
+    justify-content: center;
+    text-align: center;
     padding-bottom: 16px; }
   .footer__privacy {
     display: flex;
@@ -830,7 +831,7 @@ body {
   .header__button-repair::after {
     display: inline-block;
     content: " ";
-    background-image: url("./img/img/icons/repair.svg");
+    background-image: url("./img/icons/repair.svg");
     width: 40px;
     height: 40px; }
   .header__subtitle {
@@ -839,7 +840,7 @@ body {
   .header__button-check-status::after {
     display: inline-block;
     content: " ";
-    background-image: url("./img/img/icons/checkstatus.svg");
+    background-image: url("./img/icons/checkstatus.svg");
     width: 40px;
     height: 40px; }
   .header__closeBurger-logo {
@@ -904,28 +905,28 @@ body {
   100% {
     transform: scale(1); } }
   .button__close {
-    background-image: url("./img/img/icons/close.svg"); }
+    background-image: url("./img/icons/close.svg"); }
   .button__search {
-    background-image: url("./img/img/icons/search.svg"); }
+    background-image: url("./img/icons/search.svg"); }
   .button__phone {
-    background-image: url("./img/img/icons/phone.svg"); }
+    background-image: url("./img/icons/phone.svg"); }
   .button__chat {
-    background-image: url("./img/img/icons/chat.svg"); }
+    background-image: url("./img/icons/chat.svg"); }
   .button__profile {
-    background-image: url("./img/img/icons/profile.svg"); }
+    background-image: url("./img/icons/profile.svg"); }
   .button__menu {
-    background-image: url("./img/img/icons/burger.svg"); }
+    background-image: url("./img/icons/burger.svg"); }
     @media (min-width: 1366px) {
       .button__menu {
         display: none; } }
   .button__chat {
-    background-image: url("./img/img/icons/chat.svg"); }
+    background-image: url("./img/icons/chat.svg"); }
   .button__profile {
-    background-image: url("./img/img/icons/profile.svg"); }
+    background-image: url("./img/icons/profile.svg"); }
   .button__repair {
-    background-image: url("./img/img/icons/repair.svg"); }
+    background-image: url("./img/icons/repair.svg"); }
   .button__check-status {
-    background-image: url("./img/img/icons/checkstatus.svg"); }
+    background-image: url("./img/icons/checkstatus.svg"); }
   @media (min-width: 360px) {
     .button__callback, .button__feedback {
       margin: 24px 0 0 16px; } }
@@ -950,7 +951,7 @@ body {
 
 .submit__button::after {
   content: " ";
-  background-image: url("./img/img/icons/arrowwhite.svg");
+  background-image: url("./img/icons/arrowwhite.svg");
   width: 10px;
   height: 10px;
   top: 35%;
