@@ -37,10 +37,9 @@
         font-size: 14px;
 
         &__copyright {
-            display: flex;
+            display: block;
             width: 33%;
-            justify-content: center;
-            text-align: center;
+            text-align: left;
             margin-left: 0;
         }
         &__privacy {
