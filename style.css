@@ -289,8 +289,8 @@ body {
     cursor: pointer;
     font-family: 'TTLakes-Medium';
     font-size: 16px;
-    font-weight: 900;
-    padding: 5px; }
+    font-weight: 600;
+    padding: 0; }
   .sidebar__languanes-button:hover {
     color: #7E7E82; }
   @media (min-width: 1366px) {
@@ -616,9 +616,8 @@ body {
   color: #7E7E82;
   font-size: 14px; }
   .footer__copyright {
-    display: flex;
-    justify-content: center;
-    text-align: center;
+    display: block;
+    text-align: left;
     padding-bottom: 16px; }
   .footer__privacy {
     display: flex;
